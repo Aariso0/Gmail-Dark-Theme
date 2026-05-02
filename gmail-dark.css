@@ -173,7 +173,7 @@ html.gdt-enabled .aHS-bnu .qj,
 html.gdt-enabled .aHS-bnv .qj,
 html.gdt-enabled .aHS-bnw .qj,
 html.gdt-enabled .aHS-bnx .qj {
-  background: transparent !important;
+  background-color: transparent !important;
   box-shadow: none !important;
   color: var(--gdt-strong) !important;
   text-shadow: none !important;
@@ -215,7 +215,31 @@ html.gdt-enabled .CJ .nU,
 html.gdt-enabled .CJ .n0 {
   color: var(--gdt-icon) !important;
   opacity: 1 !important;
-  filter: brightness(2.2) contrast(1.08) !important;
+  filter: invert(90%) sepia(8%) saturate(120%) hue-rotate(170deg) brightness(1.08) contrast(1.02) !important;
+}
+
+html.gdt-enabled .aim .TO .nU *,
+html.gdt-enabled .aim .TN .nU *,
+html.gdt-enabled .aim .TO .n0 *,
+html.gdt-enabled .aim .TN .n0 *,
+html.gdt-enabled .CJ .nU *,
+html.gdt-enabled .CJ .n0 *,
+html.gdt-enabled .aim .TO .asa,
+html.gdt-enabled .aim .TN .asa,
+html.gdt-enabled .aim .TO .ar9,
+html.gdt-enabled .aim .TN .ar9,
+html.gdt-enabled .aim .TO .asf,
+html.gdt-enabled .aim .TN .asf,
+html.gdt-enabled .aim .TO .bjy,
+html.gdt-enabled .aim .TN .bjy,
+html.gdt-enabled .aim .TO .bqX,
+html.gdt-enabled .aim .TN .bqX,
+html.gdt-enabled .aim .TO .T-KT,
+html.gdt-enabled .aim .TN .T-KT {
+  color: var(--gdt-icon) !important;
+  fill: var(--gdt-icon) !important;
+  opacity: 1 !important;
+  filter: invert(90%) sepia(8%) saturate(120%) hue-rotate(170deg) brightness(1.08) contrast(1.02) !important;
 }
 
 html.gdt-enabled .aim .TO.NQ .nU,
@@ -223,6 +247,58 @@ html.gdt-enabled .aim .TO.NQ .n0,
 html.gdt-enabled .aim .TN.NQ .nU,
 html.gdt-enabled .aim .TN.NQ .n0 {
   color: #8ab4f8 !important;
+  filter: brightness(1.55) saturate(1.05) !important;
+}
+
+html.gdt-enabled .aim .TO.NQ .nU *,
+html.gdt-enabled .aim .TO.NQ .n0 *,
+html.gdt-enabled .aim .TN.NQ .nU *,
+html.gdt-enabled .aim .TN.NQ .n0 *,
+html.gdt-enabled .aim .TO.NQ .asa,
+html.gdt-enabled .aim .TN.NQ .asa,
+html.gdt-enabled .aim .TO.NQ .ar9,
+html.gdt-enabled .aim .TN.NQ .ar9,
+html.gdt-enabled .aim .TO.NQ .asf,
+html.gdt-enabled .aim .TN.NQ .asf,
+html.gdt-enabled .aim .TO.NQ .bjy,
+html.gdt-enabled .aim .TN.NQ .bjy,
+html.gdt-enabled .aim .TO.NQ .bqX,
+html.gdt-enabled .aim .TN.NQ .bqX,
+html.gdt-enabled .aim .TO.NQ .T-KT,
+html.gdt-enabled .aim .TN.NQ .T-KT {
+  color: #8ab4f8 !important;
+  fill: #8ab4f8 !important;
+  opacity: 1 !important;
+  filter: brightness(1.55) saturate(1.05) !important;
+}
+
+html.gdt-enabled .aim .TO .qj,
+html.gdt-enabled .aim .TN .qj,
+html.gdt-enabled .aim .TO .nU,
+html.gdt-enabled .aim .TN .nU,
+html.gdt-enabled .aim .TO .n0,
+html.gdt-enabled .aim .TN .n0,
+html.gdt-enabled .aim .TO .asa,
+html.gdt-enabled .aim .TN .asa,
+html.gdt-enabled .aim .TO .ar9,
+html.gdt-enabled .aim .TN .ar9,
+html.gdt-enabled .aim .TO .asf,
+html.gdt-enabled .aim .TN .asf,
+html.gdt-enabled .aim .TO .bjy,
+html.gdt-enabled .aim .TN .bjy,
+html.gdt-enabled .aim .TO .bqX,
+html.gdt-enabled .aim .TN .bqX,
+html.gdt-enabled .aim .TO .T-KT,
+html.gdt-enabled .aim .TN .T-KT {
+  background-color: transparent !important;
+  opacity: 1 !important;
+  filter: invert(90%) sepia(8%) saturate(120%) hue-rotate(170deg) brightness(1.08) contrast(1.02) !important;
+}
+
+html.gdt-enabled .aim .TO.NQ .qj,
+html.gdt-enabled .aim .TN.NQ .qj {
+  background-color: transparent !important;
+  opacity: 1 !important;
   filter: brightness(1.55) saturate(1.05) !important;
 }
 
