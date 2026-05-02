@@ -105,7 +105,23 @@ html.gdt-enabled .zA.yO {
 
 html.gdt-enabled .zA.btb,
 html.gdt-enabled .zA.x7 {
-  background-color: #303329 !important;
+  background-color: #252b31 !important;
+}
+
+html.gdt-enabled .zA.btb td,
+html.gdt-enabled .zA.x7 td,
+html.gdt-enabled .zA.btb .xY,
+html.gdt-enabled .zA.x7 .xY {
+  background-color: #252b31 !important;
+}
+
+html.gdt-enabled .zA.btb:hover,
+html.gdt-enabled .zA.x7:hover,
+html.gdt-enabled .zA.btb:hover td,
+html.gdt-enabled .zA.x7:hover td,
+html.gdt-enabled .zA.btb:hover .xY,
+html.gdt-enabled .zA.x7:hover .xY {
+  background-color: #2b333a !important;
 }
 
 html.gdt-enabled .yW,
@@ -594,17 +610,61 @@ html.gdt-enabled .G-Ni [role="button"]:hover {
 html.gdt-enabled .G-Ni .T-Jo,
 html.gdt-enabled .G-atb .T-Jo,
 html.gdt-enabled .T-Jo {
-  border: 1px solid #747a7c !important;
+  border: 1px solid var(--gdt-icon-muted) !important;
   outline: none !important;
   background-color: transparent !important;
   box-shadow: none !important;
+  filter: none !important;
 }
 
 html.gdt-enabled .G-Ni .T-Jo::before,
 html.gdt-enabled .G-atb .T-Jo::before,
 html.gdt-enabled .T-Jo::before {
-  border-color: #747a7c !important;
+  border-color: var(--gdt-icon-muted) !important;
   box-shadow: none !important;
+}
+
+html.gdt-enabled .zA .T-Jo,
+html.gdt-enabled .xY .T-Jo,
+html.gdt-enabled .G-atb .T-Jo {
+  border-color: #5f6668 !important;
+  box-shadow: none !important;
+}
+
+html.gdt-enabled .zA .T-Jo:hover,
+html.gdt-enabled .xY .T-Jo:hover,
+html.gdt-enabled .G-atb .T-Jo:hover {
+  border-color: var(--gdt-icon-muted) !important;
+  background-color: transparent !important;
+}
+
+html.gdt-enabled .zA.btb .T-Jo,
+html.gdt-enabled .zA.x7 .T-Jo,
+html.gdt-enabled .T-Jo[aria-checked="true"],
+html.gdt-enabled .T-Jo.T-Jo-Jp,
+html.gdt-enabled .T-Jo.T-Jo-auh {
+  position: relative !important;
+  border-color: #8ab4f8 !important;
+  background-color: #26384d !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+html.gdt-enabled .zA.btb .T-Jo::after,
+html.gdt-enabled .zA.x7 .T-Jo::after,
+html.gdt-enabled .T-Jo[aria-checked="true"]::after,
+html.gdt-enabled .T-Jo.T-Jo-Jp::after,
+html.gdt-enabled .T-Jo.T-Jo-auh::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  width: 4px !important;
+  height: 7px !important;
+  border: solid #ffffff !important;
+  border-width: 0 2px 2px 0 !important;
+  transform: translate(-50%, -56%) rotate(45deg) !important;
+  opacity: 1 !important;
 }
 
 /* Sidebar label section should stay visible, but dark. */
@@ -618,6 +678,34 @@ html.gdt-enabled [title="Labels"] {
   background-color: var(--gdt-page) !important;
   color: var(--gdt-strong) !important;
   opacity: 1 !important;
+}
+
+html.gdt-enabled .aip,
+html.gdt-enabled .aip span,
+html.gdt-enabled .aip div,
+html.gdt-enabled .aip [role="heading"],
+html.gdt-enabled .aip [aria-label="Labels"],
+html.gdt-enabled .aip [title="Labels"],
+html.gdt-enabled .alO,
+html.gdt-enabled .alO span,
+html.gdt-enabled .alO div,
+html.gdt-enabled .alO [role="heading"],
+html.gdt-enabled .alO [aria-label="Labels"],
+html.gdt-enabled .alO [title="Labels"] {
+  color: var(--gdt-strong) !important;
+  opacity: 1 !important;
+}
+
+html.gdt-enabled .aip [role="button"],
+html.gdt-enabled .aip [aria-label*="label" i],
+html.gdt-enabled .aip [title*="label" i],
+html.gdt-enabled .alO [role="button"],
+html.gdt-enabled .alO [aria-label*="label" i],
+html.gdt-enabled .alO [title*="label" i] {
+  color: var(--gdt-icon-muted) !important;
+  fill: var(--gdt-icon-muted) !important;
+  opacity: 1 !important;
+  filter: none !important;
 }
 
 html.gdt-enabled .alO *,
@@ -884,4 +972,54 @@ html.gdt-enabled ::-webkit-scrollbar-thumb {
 
 html.gdt-enabled ::-webkit-scrollbar-thumb:hover {
   background: #69625a;
+}
+
+/* Final left-sidebar pass: Gmail gives the Labels header extra-faint styles. */
+html.gdt-enabled .aeN .byl,
+html.gdt-enabled .aeN .byl *,
+html.gdt-enabled .aeN .n6,
+html.gdt-enabled .aeN .n6 *,
+html.gdt-enabled .aeN .ah9,
+html.gdt-enabled .aeN .ah9 *,
+html.gdt-enabled .aeN .aip,
+html.gdt-enabled .aeN .aip *,
+html.gdt-enabled .aeN .alO,
+html.gdt-enabled .aeN .alO *,
+html.gdt-enabled .aip,
+html.gdt-enabled .aip *,
+html.gdt-enabled .alO,
+html.gdt-enabled .alO *,
+html.gdt-enabled .aeN [aria-label="Labels"],
+html.gdt-enabled .aeN [aria-label="Labels"] *,
+html.gdt-enabled .aeN [title="Labels"],
+html.gdt-enabled .aeN [title="Labels"] *,
+html.gdt-enabled .aeN [role="heading"],
+html.gdt-enabled .aeN [role="heading"] * {
+  color: var(--gdt-strong) !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+html.gdt-enabled .aeN .byl [role="button"],
+html.gdt-enabled .aeN .n6 [role="button"],
+html.gdt-enabled .aeN .ah9 [role="button"],
+html.gdt-enabled .aeN .aip [role="button"],
+html.gdt-enabled .aeN .alO [role="button"],
+html.gdt-enabled .aip [role="button"],
+html.gdt-enabled .alO [role="button"],
+html.gdt-enabled .aeN [aria-label*="label" i][role="button"],
+html.gdt-enabled .aeN [title*="label" i][role="button"],
+html.gdt-enabled .aeN .byl [role="button"] *,
+html.gdt-enabled .aeN .n6 [role="button"] *,
+html.gdt-enabled .aeN .ah9 [role="button"] *,
+html.gdt-enabled .aeN .aip [role="button"] *,
+html.gdt-enabled .aeN .alO [role="button"] *,
+html.gdt-enabled .aip [role="button"] *,
+html.gdt-enabled .alO [role="button"] *,
+html.gdt-enabled .aeN [aria-label*="label" i][role="button"] *,
+html.gdt-enabled .aeN [title*="label" i][role="button"] * {
+  color: var(--gdt-icon-muted) !important;
+  fill: var(--gdt-icon-muted) !important;
+  opacity: 1 !important;
+  filter: none !important;
 }
