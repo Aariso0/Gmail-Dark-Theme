@@ -169,6 +169,64 @@ html.gdt-enabled .aim:hover {
   background-color: var(--gdt-panel-hover) !important;
 }
 
+html.gdt-enabled .aeN,
+html.gdt-enabled .TK,
+html.gdt-enabled .aim,
+html.gdt-enabled .TO,
+html.gdt-enabled .TN {
+  overflow-x: hidden !important;
+}
+
+html.gdt-enabled .aim .TO,
+html.gdt-enabled .aim .TN,
+html.gdt-enabled .TK .TO,
+html.gdt-enabled .TK .TN {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+html.gdt-enabled .aim .aio,
+html.gdt-enabled .TK .aio,
+html.gdt-enabled .aim .TO span,
+html.gdt-enabled .aim .TN span {
+  min-width: 0 !important;
+  max-width: calc(100% - 52px) !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+html.gdt-enabled .aeN[style*="width: 72px"] .aim .aio,
+html.gdt-enabled .aeN[style*="width:72px"] .aim .aio,
+html.gdt-enabled .aeN[style*="width: 72px"] .aim .TO span,
+html.gdt-enabled .aeN[style*="width:72px"] .aim .TO span,
+html.gdt-enabled .aeN[style*="width: 72px"] .aim .TN span,
+html.gdt-enabled .aeN[style*="width:72px"] .aim .TN span,
+html.gdt-enabled .aeN[style*="width: 72px"] .CJ span,
+html.gdt-enabled .aeN[style*="width:72px"] .CJ span {
+  display: none !important;
+}
+
+html.gdt-enabled.gdt-rail-collapsed .aeN .aim .aio,
+html.gdt-enabled.gdt-rail-collapsed .aeN .aim .TO span,
+html.gdt-enabled.gdt-rail-collapsed .aeN .aim .TN span,
+html.gdt-enabled.gdt-rail-collapsed .aeN .TK .aio,
+html.gdt-enabled.gdt-rail-collapsed .aeN .TK .TO span,
+html.gdt-enabled.gdt-rail-collapsed .aeN .TK .TN span,
+html.gdt-enabled.gdt-rail-collapsed .aeN .CJ span,
+html.gdt-enabled.gdt-rail-collapsed .aeN .nZ .qj + *,
+html.gdt-enabled.gdt-rail-collapsed .aeN .TO > div:not(:first-child),
+html.gdt-enabled.gdt-rail-collapsed .aeN .TN > div:not(:first-child) {
+  display: none !important;
+  width: 0 !important;
+  max-width: 0 !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+}
+
 html.gdt-enabled .aim *,
 html.gdt-enabled .TO *,
 html.gdt-enabled .TN *,
@@ -1022,4 +1080,52 @@ html.gdt-enabled .aeN [title*="label" i][role="button"] * {
   fill: var(--gdt-icon-muted) !important;
   opacity: 1 !important;
   filter: none !important;
+}
+
+/* Must stay last: hide collapsed-rail text after all sidebar color rules. */
+html.gdt-enabled.gdt-rail-collapsed .aeN {
+  overflow: hidden !important;
+  clip-path: inset(0) !important;
+}
+
+html.gdt-enabled.gdt-rail-collapsed .aeN .TO,
+html.gdt-enabled.gdt-rail-collapsed .aeN .TN,
+html.gdt-enabled.gdt-rail-collapsed .aeN .CJ,
+html.gdt-enabled.gdt-rail-collapsed .aeN .aip,
+html.gdt-enabled.gdt-rail-collapsed .aeN .alO,
+html.gdt-enabled.gdt-rail-collapsed .aeN .byl,
+html.gdt-enabled.gdt-rail-collapsed .aeN .n6,
+html.gdt-enabled.gdt-rail-collapsed .aeN .ah9 {
+  font-size: 0 !important;
+}
+
+html.gdt-enabled.gdt-rail-collapsed .aeN .aio,
+html.gdt-enabled.gdt-rail-collapsed .aeN .TO span,
+html.gdt-enabled.gdt-rail-collapsed .aeN .TN span,
+html.gdt-enabled.gdt-rail-collapsed .aeN .CJ span,
+html.gdt-enabled.gdt-rail-collapsed .aeN .aip span,
+html.gdt-enabled.gdt-rail-collapsed .aeN .alO span,
+html.gdt-enabled.gdt-rail-collapsed .aeN .byl span,
+html.gdt-enabled.gdt-rail-collapsed .aeN .n6 span,
+html.gdt-enabled.gdt-rail-collapsed .aeN .ah9 span {
+  color: transparent !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+html.gdt-enabled.gdt-rail-collapsed .aeN .qj,
+html.gdt-enabled.gdt-rail-collapsed .aeN .nU,
+html.gdt-enabled.gdt-rail-collapsed .aeN .n0,
+html.gdt-enabled.gdt-rail-collapsed .aeN .asa,
+html.gdt-enabled.gdt-rail-collapsed .aeN .ar9,
+html.gdt-enabled.gdt-rail-collapsed .aeN .asf,
+html.gdt-enabled.gdt-rail-collapsed .aeN .bjy,
+html.gdt-enabled.gdt-rail-collapsed .aeN .bqX,
+html.gdt-enabled.gdt-rail-collapsed .aeN .T-KT,
+html.gdt-enabled.gdt-rail-collapsed .aeN [role="button"] {
+  font-size: 14px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
