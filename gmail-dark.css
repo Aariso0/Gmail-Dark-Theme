@@ -167,6 +167,8 @@ html.gdt-enabled .TO:hover,
 html.gdt-enabled .TN:hover,
 html.gdt-enabled .aim:hover {
   background-color: var(--gdt-panel-hover) !important;
+  border-radius: 0 16px 16px 0 !important;
+  background-clip: padding-box !important;
 }
 
 html.gdt-enabled .aeN,
@@ -264,6 +266,31 @@ html.gdt-enabled .TN.NQ,
 html.gdt-enabled .ain {
   background-color: #333226 !important;
   color: #fff0c2 !important;
+  border-radius: 0 16px 16px 0 !important;
+  background-clip: padding-box !important;
+  overflow: hidden !important;
+  margin-right: 8px !important;
+  box-shadow: none !important;
+}
+
+html.gdt-enabled .aeN::-webkit-scrollbar,
+html.gdt-enabled .TK::-webkit-scrollbar,
+html.gdt-enabled .aim::-webkit-scrollbar,
+html.gdt-enabled .nZ::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html.gdt-enabled .aeN::-webkit-scrollbar-track,
+html.gdt-enabled .TK::-webkit-scrollbar-track,
+html.gdt-enabled .aim::-webkit-scrollbar-track,
+html.gdt-enabled .nZ::-webkit-scrollbar-track,
+html.gdt-enabled .aeN::-webkit-scrollbar-thumb,
+html.gdt-enabled .TK::-webkit-scrollbar-thumb,
+html.gdt-enabled .aim::-webkit-scrollbar-thumb,
+html.gdt-enabled .nZ::-webkit-scrollbar-thumb {
+  background: transparent !important;
+  border: 0 !important;
 }
 
 html.gdt-enabled .aim .TO,
@@ -1128,4 +1155,97 @@ html.gdt-enabled.gdt-rail-collapsed .aeN [role="button"] {
   font-size: 14px !important;
   opacity: 1 !important;
   visibility: visible !important;
+}
+
+/* Keep hovered label actions from drawing a gray pill at the row edge. */
+html.gdt-enabled .aeN .TO:hover,
+html.gdt-enabled .aeN .TN:hover,
+html.gdt-enabled .aeN .TO.NQ:hover,
+html.gdt-enabled .aeN .TN.NQ:hover {
+  overflow: hidden !important;
+  background-clip: padding-box !important;
+}
+
+html.gdt-enabled .aeN .TO:hover [role="button"],
+html.gdt-enabled .aeN .TN:hover [role="button"],
+html.gdt-enabled .aeN .TO.NQ:hover [role="button"],
+html.gdt-enabled .aeN .TN.NQ:hover [role="button"],
+html.gdt-enabled .aeN .TO:hover [role="button"] *,
+html.gdt-enabled .aeN .TN:hover [role="button"] *,
+html.gdt-enabled .aeN .TO.NQ:hover [role="button"] *,
+html.gdt-enabled .aeN .TN.NQ:hover [role="button"] * {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  color: var(--gdt-strong) !important;
+  fill: var(--gdt-strong) !important;
+  opacity: 1 !important;
+}
+
+html.gdt-enabled .aeN .TO:hover [role="button"]::before,
+html.gdt-enabled .aeN .TN:hover [role="button"]::before,
+html.gdt-enabled .aeN .TO.NQ:hover [role="button"]::before,
+html.gdt-enabled .aeN .TN.NQ:hover [role="button"]::before,
+html.gdt-enabled .aeN .TO:hover [role="button"]::after,
+html.gdt-enabled .aeN .TN:hover [role="button"]::after,
+html.gdt-enabled .aeN .TO.NQ:hover [role="button"]::after,
+html.gdt-enabled .aeN .TN.NQ:hover [role="button"]::after {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+html.gdt-enabled .aeN .TO:hover .asa,
+html.gdt-enabled .aeN .TN:hover .asa,
+html.gdt-enabled .aeN .TO:hover .ar9,
+html.gdt-enabled .aeN .TN:hover .ar9,
+html.gdt-enabled .aeN .TO:hover .asf,
+html.gdt-enabled .aeN .TN:hover .asf,
+html.gdt-enabled .aeN .TO:hover .bjy,
+html.gdt-enabled .aeN .TN:hover .bjy,
+html.gdt-enabled .aeN .TO:hover .bqX,
+html.gdt-enabled .aeN .TN:hover .bqX,
+html.gdt-enabled .aeN .TO.NQ:hover .asa,
+html.gdt-enabled .aeN .TN.NQ:hover .asa,
+html.gdt-enabled .aeN .TO.NQ:hover .ar9,
+html.gdt-enabled .aeN .TN.NQ:hover .ar9,
+html.gdt-enabled .aeN .TO.NQ:hover .asf,
+html.gdt-enabled .aeN .TN.NQ:hover .asf,
+html.gdt-enabled .aeN .TO.NQ:hover .bjy,
+html.gdt-enabled .aeN .TN.NQ:hover .bjy,
+html.gdt-enabled .aeN .TO.NQ:hover .bqX,
+html.gdt-enabled .aeN .TN.NQ:hover .bqX {
+  color: var(--gdt-strong) !important;
+  fill: var(--gdt-strong) !important;
+  opacity: 1 !important;
+  filter: invert(100%) brightness(1.25) contrast(1.08) !important;
+}
+
+html.gdt-enabled .aeN .TO:hover [aria-haspopup="true"],
+html.gdt-enabled .aeN .TN:hover [aria-haspopup="true"],
+html.gdt-enabled .aeN .TO.NQ:hover [aria-haspopup="true"],
+html.gdt-enabled .aeN .TN.NQ:hover [aria-haspopup="true"],
+html.gdt-enabled .aeN .TO:hover [aria-label*="More" i],
+html.gdt-enabled .aeN .TN:hover [aria-label*="More" i],
+html.gdt-enabled .aeN .TO.NQ:hover [aria-label*="More" i],
+html.gdt-enabled .aeN .TN.NQ:hover [aria-label*="More" i] {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+  opacity: 1 !important;
+  filter: invert(100%) brightness(1.35) contrast(1.15) !important;
+}
+
+html.gdt-enabled .aeN .TO:hover .aio,
+html.gdt-enabled .aeN .TN:hover .aio,
+html.gdt-enabled .aeN .TO.NQ:hover .aio,
+html.gdt-enabled .aeN .TN.NQ:hover .aio,
+html.gdt-enabled .aeN .TO:hover span,
+html.gdt-enabled .aeN .TN:hover span,
+html.gdt-enabled .aeN .TO.NQ:hover span,
+html.gdt-enabled .aeN .TN.NQ:hover span {
+  color: var(--gdt-strong) !important;
+  fill: var(--gdt-strong) !important;
+  filter: none !important;
+  opacity: 1 !important;
 }
