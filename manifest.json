@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Dark Theme",
+  "description": "Applies a clean dark theme to Gmail.",
+  "version": "1.0.0",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://mail.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "gmail-dark.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "Gmail Dark Theme",
+    "default_popup": "popup.html"
+  }
+}

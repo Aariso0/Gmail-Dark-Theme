@@ -1,0 +1,466 @@
+html.gdt-enabled {
+  color-scheme: dark !important;
+  --gdt-page: #151515;
+  --gdt-panel: #1d1f21;
+  --gdt-panel-soft: #242629;
+  --gdt-panel-hover: #2b2e32;
+  --gdt-border: #3a3d42;
+  --gdt-text: #e8e3da;
+  --gdt-strong: #ffffff;
+  --gdt-muted: #b9b2a8;
+  --gdt-faint: #8f887f;
+  --gdt-icon: #f4f1ea;
+  --gdt-icon-muted: #d6d0c8;
+  --gdt-link: #d6bb7f;
+  --gdt-accent: #b6c48f;
+}
+
+html.gdt-enabled,
+html.gdt-enabled body {
+  background: var(--gdt-page) !important;
+  color: var(--gdt-text) !important;
+}
+
+html.gdt-enabled a {
+  color: var(--gdt-link) !important;
+}
+
+html.gdt-enabled input,
+html.gdt-enabled textarea,
+html.gdt-enabled select,
+html.gdt-enabled [contenteditable="true"] {
+  background-color: var(--gdt-panel) !important;
+  color: var(--gdt-text) !important;
+  caret-color: var(--gdt-text) !important;
+}
+
+html.gdt-enabled input::placeholder,
+html.gdt-enabled textarea::placeholder {
+  color: var(--gdt-faint) !important;
+}
+
+/* Main Gmail shell */
+html.gdt-enabled .aAU,
+html.gdt-enabled .aeJ,
+html.gdt-enabled .aeF,
+html.gdt-enabled .AO,
+html.gdt-enabled .Tm,
+html.gdt-enabled .bkK,
+html.gdt-enabled .nH,
+html.gdt-enabled .no,
+html.gdt-enabled .wT,
+html.gdt-enabled .aeN,
+html.gdt-enabled .ae3,
+html.gdt-enabled .aAA,
+html.gdt-enabled .Cp,
+html.gdt-enabled .F,
+html.gdt-enabled .G-atb {
+  background-color: var(--gdt-page) !important;
+  color: var(--gdt-text) !important;
+}
+
+/* Search: keep Gmail's sizing alone, only change paint. */
+html.gdt-enabled form[role="search"],
+html.gdt-enabled form[role="search"] table,
+html.gdt-enabled form[role="search"] td,
+html.gdt-enabled form[role="search"] div,
+html.gdt-enabled form[role="search"] input,
+html.gdt-enabled input[aria-label="Search mail"],
+html.gdt-enabled input[placeholder*="Search"] {
+  background-color: #26282b !important;
+  color: var(--gdt-text) !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+html.gdt-enabled form[role="search"] {
+  border: 1px solid var(--gdt-border) !important;
+  border-radius: 10px !important;
+}
+
+html.gdt-enabled form[role="search"]:focus-within {
+  background-color: #2d3034 !important;
+  border-color: #5b5f67 !important;
+}
+
+/* Inbox rows */
+html.gdt-enabled .zA,
+html.gdt-enabled .yO,
+html.gdt-enabled .xY {
+  background-color: var(--gdt-panel) !important;
+  color: var(--gdt-text) !important;
+}
+
+html.gdt-enabled .zA:hover,
+html.gdt-enabled .yO:hover,
+html.gdt-enabled .xY:hover {
+  background-color: var(--gdt-panel-hover) !important;
+}
+
+html.gdt-enabled .zA.zE,
+html.gdt-enabled .zA.yO {
+  background-color: #202225 !important;
+}
+
+html.gdt-enabled .zA.btb,
+html.gdt-enabled .zA.x7 {
+  background-color: #303329 !important;
+}
+
+html.gdt-enabled .yW,
+html.gdt-enabled .bog,
+html.gdt-enabled .bqe,
+html.gdt-enabled .xS,
+html.gdt-enabled .yP,
+html.gdt-enabled .bq3,
+html.gdt-enabled .bq4 {
+  color: var(--gdt-text) !important;
+}
+
+html.gdt-enabled .y2,
+html.gdt-enabled .bq9,
+html.gdt-enabled .adx,
+html.gdt-enabled .g3,
+html.gdt-enabled .hb,
+html.gdt-enabled .go,
+html.gdt-enabled .hx,
+html.gdt-enabled .ig,
+html.gdt-enabled .iv,
+html.gdt-enabled .qj {
+  color: var(--gdt-muted) !important;
+}
+
+/* Left navigation and labels */
+html.gdt-enabled .nZ,
+html.gdt-enabled .TO,
+html.gdt-enabled .TN,
+html.gdt-enabled .TK,
+html.gdt-enabled .CL,
+html.gdt-enabled .aim,
+html.gdt-enabled .ain,
+html.gdt-enabled .aio,
+html.gdt-enabled .nU,
+html.gdt-enabled .n0 {
+  background-color: transparent !important;
+  color: var(--gdt-strong) !important;
+  opacity: 1 !important;
+}
+
+html.gdt-enabled .TO:hover,
+html.gdt-enabled .TN:hover,
+html.gdt-enabled .aim:hover {
+  background-color: var(--gdt-panel-hover) !important;
+}
+
+html.gdt-enabled .TO.NQ,
+html.gdt-enabled .TN.NQ,
+html.gdt-enabled .ain {
+  background-color: #333226 !important;
+  color: #fff0c2 !important;
+}
+
+html.gdt-enabled .aim .TO,
+html.gdt-enabled .aim .TN,
+html.gdt-enabled .aim .aio,
+html.gdt-enabled .TK .TO,
+html.gdt-enabled .TK .TN,
+html.gdt-enabled .CJ,
+html.gdt-enabled .CJ span,
+html.gdt-enabled [aria-label="More"],
+html.gdt-enabled [aria-label="Less"],
+html.gdt-enabled [title="More"],
+html.gdt-enabled [title="Less"] {
+  color: var(--gdt-strong) !important;
+  opacity: 1 !important;
+}
+
+html.gdt-enabled .aim .TO .nU,
+html.gdt-enabled .aim .TN .nU,
+html.gdt-enabled .aim .TO .n0,
+html.gdt-enabled .aim .TN .n0,
+html.gdt-enabled .CJ .nU,
+html.gdt-enabled .CJ .n0 {
+  color: var(--gdt-icon) !important;
+  opacity: 1 !important;
+  filter: brightness(2.2) contrast(1.08) !important;
+}
+
+html.gdt-enabled .aim .TO.NQ .nU,
+html.gdt-enabled .aim .TO.NQ .n0,
+html.gdt-enabled .aim .TN.NQ .nU,
+html.gdt-enabled .aim .TN.NQ .n0 {
+  color: #8ab4f8 !important;
+  filter: brightness(1.55) saturate(1.05) !important;
+}
+
+/* Buttons, menus, dropdowns, and the storage/upgrade area. */
+html.gdt-enabled .T-I,
+html.gdt-enabled .J-J5-Ji,
+html.gdt-enabled .asa,
+html.gdt-enabled .ar9,
+html.gdt-enabled .G-Ni,
+html.gdt-enabled .J-N,
+html.gdt-enabled .J-LC,
+html.gdt-enabled .J-M,
+html.gdt-enabled .Kj-JD,
+html.gdt-enabled .b8,
+html.gdt-enabled .aDh,
+html.gdt-enabled .AD,
+html.gdt-enabled .brC-aT5-aOt-Jw,
+html.gdt-enabled [role="menu"],
+html.gdt-enabled [role="menuitem"],
+html.gdt-enabled [aria-label*="upgrade" i],
+html.gdt-enabled [aria-label*="storage" i],
+html.gdt-enabled a[href*="storage"],
+html.gdt-enabled a[href*="one.google.com"],
+html.gdt-enabled a[href*="google.com/drive/storage"] {
+  background-color: var(--gdt-panel-soft) !important;
+  color: var(--gdt-text) !important;
+  border-color: var(--gdt-border) !important;
+  box-shadow: none !important;
+}
+
+html.gdt-enabled [aria-label*="upgrade" i],
+html.gdt-enabled [aria-label*="storage" i],
+html.gdt-enabled a[href*="storage"],
+html.gdt-enabled a[href*="one.google.com"],
+html.gdt-enabled a[href*="google.com/drive/storage"],
+html.gdt-enabled [aria-label*="upgrade" i] *,
+html.gdt-enabled [aria-label*="storage" i] *,
+html.gdt-enabled a[href*="storage"] *,
+html.gdt-enabled a[href*="one.google.com"] *,
+html.gdt-enabled a[href*="google.com/drive/storage"] * {
+  color: var(--gdt-strong) !important;
+  fill: var(--gdt-strong) !important;
+  opacity: 1 !important;
+}
+
+html.gdt-enabled [aria-label*="upgrade" i],
+html.gdt-enabled [aria-label*="storage" i],
+html.gdt-enabled a[href*="storage"],
+html.gdt-enabled a[href*="one.google.com"],
+html.gdt-enabled a[href*="google.com/drive/storage"] {
+  background-color: #303337 !important;
+}
+
+html.gdt-enabled .T-I:hover,
+html.gdt-enabled .J-N:hover,
+html.gdt-enabled .J-LC:hover,
+html.gdt-enabled [role="menuitem"]:hover {
+  background-color: var(--gdt-panel-hover) !important;
+}
+
+html.gdt-enabled .T-I-KE,
+html.gdt-enabled .T-I-ax7,
+html.gdt-enabled .z0 > .L3 {
+  background-color: #b6c48f !important;
+  color: #161713 !important;
+}
+
+html.gdt-enabled .T-I-KE:hover,
+html.gdt-enabled .T-I-ax7:hover,
+html.gdt-enabled .z0 > .L3:hover {
+  background-color: #c7d79d !important;
+}
+
+/* Open message view */
+html.gdt-enabled .adn,
+html.gdt-enabled .adn.ads,
+html.gdt-enabled .gs,
+html.gdt-enabled .h7,
+html.gdt-enabled .ii,
+html.gdt-enabled .gt,
+html.gdt-enabled .a3s,
+html.gdt-enabled .im,
+html.gdt-enabled .M9,
+html.gdt-enabled .ha,
+html.gdt-enabled .hP,
+html.gdt-enabled .gD,
+html.gdt-enabled .gE {
+  background-color: var(--gdt-page) !important;
+  color: var(--gdt-text) !important;
+}
+
+html.gdt-enabled .hP {
+  color: #f0ece5 !important;
+}
+
+html.gdt-enabled .gD,
+html.gdt-enabled .gE,
+html.gdt-enabled .g3,
+html.gdt-enabled .hb {
+  color: var(--gdt-muted) !important;
+}
+
+/* Tame bright email HTML without destroying images. */
+html.gdt-enabled .a3s table,
+html.gdt-enabled .a3s tbody,
+html.gdt-enabled .a3s tr,
+html.gdt-enabled .a3s td,
+html.gdt-enabled .a3s div,
+html.gdt-enabled .a3s p,
+html.gdt-enabled .a3s span {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+html.gdt-enabled .a3s [bgcolor="#ffffff"],
+html.gdt-enabled .a3s [bgcolor="#fff"],
+html.gdt-enabled .a3s [style*="background:#fff"],
+html.gdt-enabled .a3s [style*="background: #fff"],
+html.gdt-enabled .a3s [style*="background-color:#fff"],
+html.gdt-enabled .a3s [style*="background-color: #fff"],
+html.gdt-enabled .a3s [style*="background:white"],
+html.gdt-enabled .a3s [style*="background: white"],
+html.gdt-enabled .a3s [style*="background-color:white"],
+html.gdt-enabled .a3s [style*="background-color: white"] {
+  background-color: #202124 !important;
+  color: var(--gdt-text) !important;
+}
+
+/* Reply / Forward cards under an open email */
+html.gdt-enabled .amn,
+html.gdt-enabled .ams,
+html.gdt-enabled .amr,
+html.gdt-enabled .nr,
+html.gdt-enabled .Ar,
+html.gdt-enabled .At,
+html.gdt-enabled .Ap,
+html.gdt-enabled .aoP,
+html.gdt-enabled .aoC,
+html.gdt-enabled .aoD,
+html.gdt-enabled .aoI,
+html.gdt-enabled .aH9,
+html.gdt-enabled .aQH,
+html.gdt-enabled .HM .aDi {
+  background-color: var(--gdt-panel) !important;
+  color: var(--gdt-text) !important;
+  border-color: var(--gdt-border) !important;
+  box-shadow: none !important;
+}
+
+html.gdt-enabled .amn:hover,
+html.gdt-enabled .ams:hover,
+html.gdt-enabled .aH9:hover,
+html.gdt-enabled .aQH:hover {
+  background-color: var(--gdt-panel-hover) !important;
+}
+
+html.gdt-enabled .Am.Al.editable,
+html.gdt-enabled .LW-avf,
+html.gdt-enabled .editable {
+  background-color: #191b1e !important;
+  color: var(--gdt-text) !important;
+}
+
+/* Icons: neutral and high-contrast, with color only for selected/important states. */
+html.gdt-enabled [role="button"],
+html.gdt-enabled button,
+html.gdt-enabled .T-I,
+html.gdt-enabled .asa,
+html.gdt-enabled .ar9,
+html.gdt-enabled .asf,
+html.gdt-enabled .bjy,
+html.gdt-enabled .bqX,
+html.gdt-enabled .T-KT,
+html.gdt-enabled .T-Jo {
+  color: var(--gdt-icon-muted) !important;
+  opacity: 1 !important;
+}
+
+html.gdt-enabled [role="button"] svg,
+html.gdt-enabled button svg,
+html.gdt-enabled .T-I svg {
+  color: var(--gdt-icon-muted) !important;
+  fill: var(--gdt-icon-muted) !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+html.gdt-enabled .asa,
+html.gdt-enabled .ar9,
+html.gdt-enabled .asf,
+html.gdt-enabled .bjy,
+html.gdt-enabled .bqX,
+html.gdt-enabled .T-KT,
+html.gdt-enabled .T-Jo {
+  filter: brightness(2.1) contrast(1.04) !important;
+}
+
+html.gdt-enabled [role="button"]:hover,
+html.gdt-enabled button:hover,
+html.gdt-enabled .T-I:hover,
+html.gdt-enabled .asa:hover,
+html.gdt-enabled .ar9:hover,
+html.gdt-enabled .asf:hover,
+html.gdt-enabled .bjy:hover,
+html.gdt-enabled .bqX:hover,
+html.gdt-enabled .T-KT:hover,
+html.gdt-enabled .T-Jo:hover {
+  color: var(--gdt-strong) !important;
+}
+
+html.gdt-enabled [role="button"]:hover svg,
+html.gdt-enabled button:hover svg,
+html.gdt-enabled .T-I:hover svg {
+  color: var(--gdt-strong) !important;
+  fill: var(--gdt-strong) !important;
+}
+
+html.gdt-enabled .T-KT-Jp,
+html.gdt-enabled .T-KT-JX {
+  color: #f5d36f !important;
+  filter: brightness(1.9) saturate(1.2) !important;
+}
+
+html.gdt-enabled .G-Ni .T-I,
+html.gdt-enabled .G-Ni [role="button"],
+html.gdt-enabled .G-Ni svg {
+  color: var(--gdt-icon-muted) !important;
+  fill: var(--gdt-icon-muted) !important;
+  filter: none !important;
+}
+
+html.gdt-enabled hr,
+html.gdt-enabled .B9,
+html.gdt-enabled .G-atb,
+html.gdt-enabled .ae4,
+html.gdt-enabled .aKj,
+html.gdt-enabled .aKh,
+html.gdt-enabled .aKo,
+html.gdt-enabled .aKr,
+html.gdt-enabled .aKw,
+html.gdt-enabled .aKy,
+html.gdt-enabled .aKz {
+  border-color: var(--gdt-border) !important;
+}
+
+html.gdt-enabled img,
+html.gdt-enabled video,
+html.gdt-enabled canvas {
+  opacity: 0.98;
+}
+
+html.gdt-enabled ::selection {
+  background: #615a3b !important;
+  color: #ffffff !important;
+}
+
+html.gdt-enabled ::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+html.gdt-enabled ::-webkit-scrollbar-track {
+  background: var(--gdt-page);
+}
+
+html.gdt-enabled ::-webkit-scrollbar-thumb {
+  background: #55504a;
+  border: 3px solid var(--gdt-page);
+  border-radius: 999px;
+}
+
+html.gdt-enabled ::-webkit-scrollbar-thumb:hover {
+  background: #69625a;
+}
